@@ -1,0 +1,199 @@
+<!-- ========================= -->
+<!-- index.html -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Bejinariu Yannis | Cinematic Photography Portfolio</title>
+
+  <meta name="description" content="Luxury cinematic photography portfolio in an old money editorial style." />
+  <meta property="og:title" content="Bejinariu Yannis Photography" />
+  <meta property="og:description" content="Premium cinematic photography portfolio." />
+
+  <meta property="og:image" content="images/hero.jpg" />
+
+  <link rel="icon" href="icons/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo"></div>
+
+    <nav>
+      <a href="#gallery">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <img src="images/hero.jpg" class="hero-image">
+
+    <div class="hero-content">
+
+
+      <a href="#gallery" class="hero-btn">
+        View Portfolio
+      </a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+
+    <div class="section-title">
+      <span>Portfolio</span>
+      <h2>Selected Works</h2>
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="category">
+      <h3>Portraits</h3>
+
+      <div class="slider">
+
+        <button class="slide-btn prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="images/p1.jpg" class="gallery-img">
+          <img src="images/p2.jpg" class="gallery-img">
+          <img src="images/p3.jpg" class="gallery-img">
+          <img src="images/p4.jpg" class="gallery-img">
+        </div>
+
+        <button class="slide-btn next">&#10095;</button>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="category">
+      <h3>Street</h3>
+
+      <div class="slider">
+
+        <button class="slide-btn prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="images/s1.jpg" class="gallery-img">
+          <img src="images/s2.jpg" class="gallery-img">
+          <img src="images/s3.jpg" class="gallery-img">
+          <img src="images/s4.jpg" class="gallery-img">
+        </div>
+
+        <button class="slide-btn next">&#10095;</button>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="category">
+      <h3>Fashion</h3>
+
+      <div class="slider">
+
+        <button class="slide-btn prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="images/f1.jpg" class="gallery-img">
+          <img src="images/f2.jpg" class="gallery-img">
+          <img src="images/f3.jpg" class="gallery-img">
+          <img src="images/f4.jpg" class="gallery-img">
+        </div>
+
+        <button class="slide-btn next">&#10095;</button>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+
+    <div class="about-image">
+      <img src="images/about.jpg">
+    </div>
+
+    <div class="about-text">
+      <span>About</span>
+
+      <h2>Luxury Editorial Storytelling Through Photography</h2>
+
+      <p>
+        I create cinematic imagery inspired by timeless fashion,
+        emotional storytelling and refined visual aesthetics.
+        Every frame is designed to feel elegant, intimate and
+        unforgettable.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+
+    <div class="section-title">
+      <span>Contact</span>
+      <h2>Let's Work Together</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <a href="#" class="contact-card">
+        <h3>Instagram</h3>
+        <p>@yannis._.raw</p>
+      </a> 
+
+      <a href="#" class="contact-card">
+        <h3>Email</h3>
+        <p>yannisbej@gmail.com</p>
+      </a>
+
+      <a href="#" class="contact-card">
+        <h3>Phone</h3>
+        <p>+40 755 425 140</p>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Bejinariu Yannis — All Rights Reserved</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <img class="lightbox-img">
+
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+
+    <button class="fullscreen-btn">Fullscreen</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
