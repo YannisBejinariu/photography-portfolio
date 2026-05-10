@@ -34,7 +34,7 @@ body{
   position:fixed;
   top:0;
   width:100%;
-  padding:clamp(12px, 2vw, 25px) 8%
+  padding:clamp(12px, 2vw, 25px) 8%; /* FIX: added missing semicolon */
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -390,4 +390,14 @@ footer{
     font-size:1rem;
   }
 
+  /* FIX: hero content properly centered and not cut off on mobile */
+  .hero-content{
+    width:100%;
+    padding:0 5%;
+    text-align:center;
+  }
+
+  .hero-content h1{
+    font-size:3rem;
+  }
 }
