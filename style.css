@@ -75,7 +75,7 @@ nav a:hover{
 
 .hero{
   position:relative;
-  height:100vh;
+  width:100%;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -83,25 +83,22 @@ nav a:hover{
 }
 
 .hero-image{
-  position:absolute;
-  top:0;
-  left:0;
+  display:block;
   width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center center; /* FIX: ensures image is centered on all screens */
-  transform:scale(1.05);
+  height:auto; /* FIX: show the full image, no cropping */
 }
 
 .hero-overlay{
   position:absolute;
+  top:0;
+  left:0;
   width:100%;
   height:100%;
   background:rgba(0,0,0,.45);
 }
 
 .hero-content{
-  position:relative;
+  position:absolute;
   z-index:2;
   text-align:center;
   color:white;
@@ -370,7 +367,7 @@ footer{
 }
 
 /* ========================= */
-/* FIX NAVBAR MOBILE (IMPORTANT) */
+/* NAVBAR MOBILE */
 /* ========================= */
 
 @media (max-width: 768px){
@@ -393,20 +390,26 @@ footer{
     font-size:1rem;
   }
 
-  /* FIX: hero image properly covers full screen on mobile */
+  /* FIX: show the entire hero image on mobile, no cropping */
+  .hero{
+    align-items:flex-end;
+  }
+
   .hero-image{
-    object-position:center center;
-    transform:none; /* remove scale that can cause gaps on mobile */
+    position:relative;
+    width:100%;
+    height:auto;
+    transform:none;
   }
 
   .hero-content{
+    position:absolute;
+    bottom:40px;
     width:100%;
     padding:0 5%;
-    text-align:center;
-    margin-top:120px; /* push content below the stacked navbar */
   }
 
   .hero-btn{
-    margin-top:20px;
+    margin-top:15px;
   }
 }
